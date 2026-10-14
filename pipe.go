@@ -23,7 +23,7 @@ import (
 const LibName = "rueidis"
 const LibVer = "1.0.69"
 
-var noHello = regexp.MustCompile("unknown command .?(HELLO|hello).?")
+var noHello = regexp.MustCompile("unknown command")
 
 // See https://github.com/redis/rueidis/pull/691
 func isUnsubReply(msg *RedisMessage) bool {
